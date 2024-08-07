@@ -1,3 +1,4 @@
+// ShoppingList.js
 import React, { useState } from "react";
 import Item from "./Item";
 
@@ -10,7 +11,6 @@ function ShoppingList({ items }) {
 
   const itemsToDisplay = items.filter((item) => {
     if (selectedCategory === "All") return true;
-
     return item.category === selectedCategory;
   });
 
@@ -34,3 +34,7 @@ function ShoppingList({ items }) {
 }
 
 export default ShoppingList;
+
+
+
+
